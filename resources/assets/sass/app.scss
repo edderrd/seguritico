@@ -1,0 +1,40 @@
+@import "flatly/variables";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$fa-font-path: "../../fonts" !default;
+@import "node_modules/font-awesome/scss/font-awesome";
+
+
+
+body {
+    font-family: 'Lato';
+}
+
+.fa-btn {
+    margin-right: 6px;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+.panel-heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    padding-top: 8px;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.page-header {
+    margin-top: 0px;
+}
+
+.breadcrumb {
+    margin-top: -15px;
+}
