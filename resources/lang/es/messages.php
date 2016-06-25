@@ -35,4 +35,7 @@ return [
     'deleteSuccessfully' => 'Eliminado correctamente',
     'amount' => 'Cantidad',
     'details' => 'Detalles',
+    'profile' => 'Perfil',
+    'payments' => 'Pagos',
+    'date' => 'Fecha',
 ];

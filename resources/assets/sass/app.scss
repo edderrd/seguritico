@@ -1,6 +1,9 @@
 @import "flatly/variables";
 
+
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "flatly/flatly";
 
 $fa-font-path: "../../fonts" !default;
 @import "node_modules/font-awesome/scss/font-awesome";

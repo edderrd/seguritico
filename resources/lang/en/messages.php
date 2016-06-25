@@ -35,4 +35,7 @@ return [
     'deleteSuccessfully' => 'Deleted successfully',
     'amount' => 'Amount',
     'details' => 'Details',
+    'profile' => 'Profile',
+    'payments' => 'Payments',
+    'date' => 'Date',
 ];

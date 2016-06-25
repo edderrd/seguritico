@@ -9,7 +9,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
@@ -22,7 +22,7 @@
                         <tr>
                             <th>ID</th>
                             <th>{{trans('messages.name')}}</th>
-                            <th>Policies</th>
+                            <th class="text-center">{{ trans('messages.policies') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,7 +30,7 @@
                             <tr>
                                 <td>{{$insurer->id}}</td>
                                 <td>{{$insurer->name}}</td>
-                                <td><span class="badge">{{$insurer->policies->count()}}</span></td>
+                                <td class="text-center"><span class="badge">{{$insurer->policies->count()}}</span></td>
                             </tr>
                         @empty
                             <tr>

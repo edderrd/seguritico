@@ -9,7 +9,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <span class="panel-title"><i class="fa fa-users"></i> {{trans('messages.clients')}}</span>
@@ -24,7 +24,7 @@
                             <th>{{trans('messages.indentification')}}</th>
                             <th>{{trans('messages.name')}}</th>
                             <th>{{trans('messages.email')}}</th>
-                            <th>{{ trans('messages.policies') }}</th>
+                            <th class="text-center">{{ trans('messages.policies') }}</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -34,13 +34,13 @@
                                 <td><a href="{{route('clients.show', $client->id)}}">{{$client->identification}}</a></td>
                                 <td><a href="{{route('clients.show', $client->id)}}">{{$client->name}}</a></td>
                                 <td>{{$client->email}}</td>
-                                <td><span class="badge">{{$client->policies->count()}}</span></td>
-                                <td>
+                                <td class="text-center"><span class="badge">{{$client->policies->count()}}</span></td>
+                                <td class="text-center">
                                     <div class="btn-group">
-                                        <a href="{{route('clients.edit', $client->id)}}" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                        <a href="{{route('clients.edit', $client->id)}}" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i></a>
                                         <confirm
                                             href="{{route('clients.destroy', $client->id) }}"
-                                            class="btn btn-danger"
+                                            class="btn btn-sm btn-danger"
                                             method="delete"
                                             message="{{trans('messages.confirmDelete')}}"
                                         ><i class="fa fa-trash"></i></confirm>

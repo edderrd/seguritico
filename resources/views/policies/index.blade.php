@@ -11,7 +11,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <span class="panel-title"><i class="fa fa-file-text-o"></i> {{trans('messages.policies')}}</span>
@@ -33,15 +33,13 @@
                     <tbody>
                         @forelse($policies as $policy)
                             <tr>
-                                <td>
-                                    <a href="#">{{$policy->name}}</a>
-                                </td>
+                                <td>{{$policy->name}}</td>
                                 <td>{{$policy->insurer->name}}</td>
                                 <td>{{$policy->priceFormatted}}</td>
                                 <td>{{$policy->policyType->name}}</td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="{{route('policies.edit', $policy->id)}}" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                        <a href="{{route('policies.edit', $policy->id)}}" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i></a>
                                     </div>
                                 </td>
                             </tr>
