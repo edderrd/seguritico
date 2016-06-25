@@ -42,4 +42,6 @@ return [
     'backToHome' => 'Back to Home',
     'applicationError' => 'Application Error',
     'beRightBack' => 'Be Right Back',
+    'notFound' => 'Page not found',
+    'maintenance' => 'Maintenance',
 ];

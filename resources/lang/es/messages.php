@@ -42,4 +42,6 @@ return [
     'backToHome' => 'Regresar al Inicio',
     'applicationError' => 'Error de Aplicación',
     'beRightBack' => 'Regresamos pronto',
+    'notFound' => 'Página no encontrada',
+    'maintenance' => 'Mantenimiento',
 ];

@@ -1,6 +1,6 @@
 @extends('layouts/error-page')
 
-@section('title', '500')
+@section('title', 'Seguritico | 500')
 
 @section('styles')
     <style>
