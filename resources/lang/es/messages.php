@@ -38,4 +38,8 @@ return [
     'profile' => 'Perfil',
     'payments' => 'Pagos',
     'date' => 'Fecha',
+    'notAuthorized' => 'No esta autorizado',
+    'backToHome' => 'Regresar al Inicio',
+    'applicationError' => 'Error de Aplicación',
+    'beRightBack' => 'Regresamos pronto',
 ];

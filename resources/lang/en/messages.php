@@ -38,4 +38,8 @@ return [
     'profile' => 'Profile',
     'payments' => 'Payments',
     'date' => 'Date',
+    'notAuthorized' => 'Not authorized',
+    'backToHome' => 'Back to Home',
+    'applicationError' => 'Application Error',
+    'beRightBack' => 'Be Right Back',
 ];

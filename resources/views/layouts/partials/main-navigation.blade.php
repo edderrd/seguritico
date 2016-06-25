@@ -41,7 +41,9 @@
                 <!-- Authentication Links -->
                 @if (Auth::guest())
                     <li><a href="{{ url('/login') }}"><i class="fa fa-sign-in"></i> {{trans('messages.login')}}</a></li>
-                    <li><a href="{{ url('/register') }}"><i class="fa fa-user-plus"></i> {{trans('messages.register')}}</a></li>
+                    @if(config('app.register_enabled'))
+                        <li><a href="{{ url('/register') }}"><i class="fa fa-user-plus"></i> {{trans('messages.register')}}</a></li>
+                    @endif
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
