@@ -34,7 +34,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="2">
+                                <td colspan="3">
                                     <h4>{{trans('messages.noData')}}</h4>
                                 </td>
                             </tr>
